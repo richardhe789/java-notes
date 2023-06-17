@@ -19,40 +19,39 @@ public class DisplayMatrix {
 		System.out.print(printArr(arr));
 		// should be
 		/*
-		 * 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26
-		 * 27 28 29 30 31 32 33 34 35 36
+		 * 01 02 03 04 05 06 
+		 * 07 08 09 10 11 12 
+		 * 13 14 15 16 17 18 
+		 * 19 20 21 22 23 24 
+		 * 25 26 27 28 29 30 
+		 * 31 32 33 34 35 36
 		 */
 
 		// Traverses an array through Row Major Order
 		System.out.println("\nrowMajorOrder(arr)");
 		System.out.println(rowMajorOrder(arr));
-		// should be 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
-		// 26 27 28 29 30 31 32 33 34 35 36
+		// should be 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36
 		System.out.print("\n");
 
 		// Traverse an array through Column Major Order.
 		System.out.println("\ncolumnMajorOrder(arr)");
 		System.out.println(columnMajorOrder(arr));
-		// should be 1 7 13 19 25 31 2 8 14 20 26 32 3 9 15 21 27 33 4 10 16 22 28 34 5
-		// 11 17 23 29 35 6 12 18 24 30 36
+		// should be 1 7 13 19 25 31 2 8 14 20 26 32 3 9 15 21 27 33 4 10 16 22 28 34 5 11 17 23 29 35 6 12 18 24 30 36
 		System.out.print("\n");
 
 		System.out.println("\ncolumnTraversal(arr)");
 		System.out.println(columnTraversal(arr));
-		// should be 1 7 13 19 25 31 32 26 20 14 8 2 3 9 15 21 27 33 34 28 22 16 10 4 5
-		// 11 17 23 29 35 36 30 24 18 12 6
+		// should be 1 7 13 19 25 31 32 26 20 14 8 2 3 9 15 21 27 33 34 28 22 16 10 4 5 11 17 23 29 35 36 30 24 18 12 6
 		System.out.print("\n");
 
 		System.out.println("\nrowTraversal(arr)");
 		System.out.println(rowTraversal(arr));
-		// should be 1 2 3 4 5 6 12 11 10 9 8 7 13 14 15 16 17 18 24 23 22 21 20 19 25
-		// 26 27 28 29 30 36 35 34 33 32 31
+		// should be 1 2 3 4 5 6 12 11 10 9 8 7 13 14 15 16 17 18 24 23 22 21 20 19 25 26 27 28 29 30 36 35 34 33 32 31
 		System.out.print("\n");
 
 		System.out.println("\nspiralTraversal(arr)");
 		System.out.println(spiralTraversal(arr));
-		// should be 1 2 3 4 5 6 12 18 24 30 36 35 34 33 32 31 25 19 13 7 8 9 10 11 17
-		// 23 29 28 27 26 20 14 15 16 22 21
+		// should be 1 2 3 4 5 6 12 18 24 30 36 35 34 33 32 31 25 19 13 7 8 9 10 11 17 23 29 28 27 26 20 14 15 16 22 21
 		System.out.print("\n");
 
 		System.out.println("\nmirrorVertical(arr)");
@@ -60,8 +59,12 @@ public class DisplayMatrix {
 		System.out.println(printArr(arr));
 		// should be
 		/*
-		 * 01 02 03 03 02 01 07 08 09 09 08 07 13 14 15 15 14 13 19 20 21 21 20 19 25 26
-		 * 27 27 26 25 31 32 33 33 32 31
+		 * 01 02 03 03 02 01 
+		 * 07 08 09 09 08 07 
+		 * 13 14 15 15 14 13 
+		 * 19 20 21 21 20 19 
+		 * 25 26 27 27 26 25 
+		 * 31 32 33 33 32 31
 		 */
 		System.out.print("\n");
 
@@ -70,8 +73,12 @@ public class DisplayMatrix {
 		System.out.println(printArr(arr));
 		// should be
 		/*
-		 * 01 02 03 03 02 01 07 08 09 09 08 07 13 14 15 15 14 13 13 14 15 15 14 13 07 08
-		 * 09 09 08 07 01 02 03 03 02 01
+		 * 01 02 03 03 02 01 
+		 * 07 08 09 09 08 07 
+		 * 13 14 15 15 14 13 
+		 * 13 14 15 15 14 13 
+		 * 07 08 09 09 08 07 
+		 * 01 02 03 03 02 01
 		 */
 		System.out.print("\n");
 
@@ -80,8 +87,12 @@ public class DisplayMatrix {
 		System.out.println(printArr(arr));
 		// should be
 		/*
-		 * 01 07 13 13 07 01 07 08 14 14 08 02 13 14 15 15 09 03 13 14 15 15 09 03 07 08
-		 * 09 09 08 02 01 02 03 03 02 01
+		 * 01 07 13 13 07 01 
+		 * 07 08 14 14 08 02 
+		 * 13 14 15 15 09 03 
+		 * 13 14 15 15 09 03 
+		 * 07 08 09 09 08 02 
+		 * 01 02 03 03 02 01
 		 */
 		System.out.print("\n");
 	}
@@ -111,8 +122,12 @@ public class DisplayMatrix {
 	}
 
 	/**
-	 * Traverse the array by column, then flips direction when changing rows. | ^ |
-	 * ^ | | | | | | | | v | v | ^ Traverse the array like so
+	 * Traverse the array by column, then flips direction when changing rows. 
+	 * | ^ | ^ 
+	 * | | | | 
+	 * | | | | 
+	 * v | v | 
+	 * ^ Traverse the array like so
 	 */
 	public static String columnTraversal(int[][] arr) {
 		String str = "";
@@ -129,7 +144,10 @@ public class DisplayMatrix {
 
 	/**
 	 * Traverse the array by Row, then flips direction when changing columns.
-	 * --------> <-------- --------> <--------
+	 * --------> 
+	 * <-------- 
+	 * --------> 
+	 * <--------
 	 */
 	public static String rowTraversal(int[][] arr) {
 		String str = "";
